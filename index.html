@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPGM Studio</title>
+    <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="" type="image/x-icon">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anuphan:wght@100..700&family=Athiti:wght@200;300;400;500;600;700&family=Bai+Jamjuree:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Chakra+Petch:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Charm:wght@400;700&family=Chonburi&family=IBM+Plex+Sans+Thai+Looped:wght@100;200;300;400;500;600;700&family=IBM+Plex+Sans+Thai:wght@100;200;300;400;500;600;700&family=Itim&family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Mitr:wght@200;300;400;500;600;700&family=Niramit:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Noto+Sans+Thai:wght@100..900&family=Pattaya&family=Pridi:wght@200;300;400;500;600;700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Sarabun:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&family=Sriracha&family=Srisakdi:wght@400;700&family=Taviraj:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" />
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- Owl Carousel JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+</head>
+<body>
+    <header class="header">
+        <div class="logo">NPGM Studio</div>
+        <nav class="nav-menu" id="navMenu">
+          <ul class="menu-list">
+            <li class="TH Anuphan"><a href="#">หน้าหลัก</a></li>
+            <li class="EN"><a href="#">Home</a></li>
+            <li class="TH Anuphan"><a href="#">เกี่ยวกับ</a></li>
+            <li class="EN"><a href="#">About</a></li>
+            <li class="TH Anuphan"><a href="https://www.youtube.com/@NPGMSTUDIO/featured" target="_blank">วิดีโอ</a></li>
+            <li class="EN"><a href="https://www.youtube.com/@NPGMSTUDIO/featured" target="_blank">Videos</a></li>
+            <li class="TH Anuphan"><a href="#">ติดต่อ</a></li>
+            <li class="EN"><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+        <div class="menu-toggle" id="menuToggle">
+          <i class="fas fa-bars"></i>
+        </div>
+      </header>
+
+    <div class="language-menu Anuphan">
+        <span class="TH">ภาษา</span>
+        <span class="EN">Language</span>
+        <button class="lang-btn" onclick="switchlg(1)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Flag_of_Thailand.svg/512px-Flag_of_Thailand.svg.png" alt="TH" width="30">
+        </button>
+        <button class="lang-btn" onclick="switchlg(2)">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/83/Flag_of_the_United_Kingdom_%283-5%29.svg/640px-Flag_of_the_United_Kingdom_%283-5%29.svg.png" alt="EN" width="30">
+        </button>
+    </div>
+
+    <div class="banner" style="display: none;">
+        <img class="profile-img" src="npgmstudio.png" alt="Profile Image">
+        <div class="info">
+          <h1>NPGM Studio cnx</h1>
+          <p>@NPGMSTUDIO • ผู้ติดตาม 5.2 พัน คน • วิดีโอ 614 รายการ</p>
+          <p>องค์กรกลุ่มสตูดิโอภาคเหนือ (NSG Organization)</p>
+        </div>
+        <button class="follow-btn" onclick="window.open('https://www.youtube.com/@NPGMSTUDIO', '_blank')">ติดตาม</button>
+    </div>
+    <section class="section Anuphan">
+        <div class="news-header">
+          <h2 class="TH">วิดีโอ</h2>
+          <h2 class="EN">Videos</h2>
+          <a href="https://www.youtube.com/@NPGMSTUDIO/featured" class="TH" target="_blank">ดูทั้งหมด ></a>
+          <a href="https://www.youtube.com/@NPGMSTUDIO/featured" class="EN" target="_blank">See all ></a>
+        </div>
+      
+        <div class="news-cards">
+
+            <a href="https://www.youtube.com/live/f91zOTDeEL4?si=SdD-WcQ1x26OWsRB" target="_blank">
+            <div class="news-card">
+                <img src="vid2.png" alt="Image 1">
+                <div class="news-content">
+                <h3>🔴 LIVE | Minecraft Survival Day 3 EP.1 - Ft. Teeraphat_CH</h3>
+                <p></p>
+                </div>
+            </div>
+            </a>
+
+            <a href="https://youtube.com/live/iVAnt8o-NMI?feature=share" target="_blank">
+            <div class="news-card">
+                <img src="vid1.png" alt="Image 2">
+                <div class="news-content">
+                <h3>🔴 LIVE | Minecraft Survival Day 4 EP.2 - Ft. Teeraphat_CH</h3>
+                <p></p>
+                </div>
+            </div>
+            </a>
+            
+        </div>
+      
+    </section>
+    <section class="teams Anuphan">
+        <h2 style="color: #fff;">NS GROUP</h2>
+        <teams>
+            <team>
+                <h4 class="TH">องค์กรกลุ่มสตูดิโอภาคเหนือ</h4>
+                <h4 class="EN">Northern Studio Group Organization</h4>
+                <h4 class="TH">คณะกรรมการบริหาร</h4>
+                <h4 class="EN">Executive Committee</h4>
+            </team>
+
+            <team class="team-carousel">
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4> 
+                    <h4 class="EN">Mr. Naphat Panyo</h4> 
+                    <p class="TH">ประธานกรรมการ</p>
+                    <p class="EN">Executive Chairman</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายกฤษติเดช ศรีเมืองทอง</h4>
+                    <h4 class="EN">Mr. Krittidate Srimuangthong</h4>
+                    <p class="TH">ประธานบริหาร</p>
+                    <p class="EN">Chief Executive Officer</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายธนกฤต เมืองจันทร์</h4>
+                    <h4 class="EN">Mr. Thanakrit Muangchan</h4>
+                    <p class="TH">ผู้จัดการประธานบริหาร</p>
+                    <p class="EN">Managing Executive</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">รองประธานกรรมการอาวุโส</p>
+                    <p class="EN">Senior Vice Chairman</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายพีรดนย์ คำอุด</h4>
+                    <h4 class="EN">Mr. Peeradone Kham-ud</h4>
+                    <p class="TH">รองประธานกรรมการอาวุโส</p>
+                    <p class="EN">Senior Vice Chairman</p>
+                </div>
+                
+                <!-- คณะกรรมการบริหารองค์กร -->
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">เลขาธิการฝ่ายงานทรัพยากรบุคคล</p>
+                    <p class="EN">Secretary of Human Resources</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">เลขาธิการฝ่ายจัดการกิจการ</p>
+                    <p class="EN">Secretary for Organizational Management</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายอธิปัตย์ พิทยาศิริราชา</h4>
+                    <h4 class="EN">Mr. Athipatt Pitthayasiricha</h4>
+                    <p class="TH">เลขาธิการฝ่ายงานทรัพยากรบุคคล</p>
+                    <p class="EN">Secretary of Human Resources</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">เลขาธิการฝ่ายจัดการองค์กร</p>
+                    <p class="EN">Secretary for Organizational Management</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">เลขาธิการฝ่ายงานวิทยาศาสตร์</p>
+                    <p class="EN">Secretary for Scientific Affairs</p>
+                </div>
+                <!-- คณะกรรมการการตรวจสอบ -->
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายธีรโชติ เพ็ชรภา</h4>
+                    <h4 class="EN">Mr. Teerachot Petpa</h4>
+                    <p class="TH">เลขาธิการคณะกรรมการการตรวจสอบ</p>
+                    <p class="EN">Secretary General of the Audit Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายทีปกร อินตาเปี้ย</h4>
+                    <h4 class="EN">Mr. Thipakon Aintapia</h4>
+                    <p class="TH">กรรมการการตรวจสอบ</p>
+                    <p class="EN">Audit Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายฉันทวัฒน์ คำพัฒน์</h4>
+                    <h4 class="EN">Mr. Chantawat Khamphat</h4>
+                    <p class="TH">กรรมการการตรวจสอบ</p>
+                    <p class="EN">Audit Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายปภินวิช มูลเมือง</h4>
+                    <h4 class="EN">Mr. Papinvit MoonMuang</h4>
+                    <p class="TH">กรรมการการตรวจสอบ</p>
+                    <p class="EN">Audit Committee</p>
+                </div>
+                <!-- กรรมการ -->
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายจิรันธนิน เตชะตุ้ย</h4>
+                    <h4 class="EN">Mr. Jiranthanin Techatui</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายทีปกร อินตาเปี้ย</h4>
+                    <h4 class="EN">Mr. Thipakon Aintapia</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายฉันทวัฒน์ คำพัฒน์</h4>
+                    <h4 class="EN">Mr. Chantawat Khamphat</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายปภินวิช มูลเมือง</h4>
+                    <h4 class="EN">Mr. Papinvit MoonMuang</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายธนกฤต เมืองจันทร์</h4>
+                    <h4 class="EN">Mr. Thanakrit Muangchan</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายพีรวิชญ์ จิ๋วแก้ว</h4>
+                    <h4 class="EN">Mr. Peerawit Jiwkeaw</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายพีรดนย์ คำอุด</h4>
+                    <h4 class="EN">Mr. Peeradone Kham-ud</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายธีรโชติ เพ็ชรภา</h4>
+                    <h4 class="EN">Mr. Teerachot Petpa</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">(ว่าง)</h4>
+                    <h4 class="EN">(empty)</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">(ว่าง)</h4>
+                    <h4 class="EN">(empty)</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">(ว่าง)</h4>
+                    <h4 class="EN">(empty)</h4>
+                    <p class="TH">กรรมการการ</p>
+                    <p class="EN">Committee</p>
+                </div>
+                <!-- เพิ่มเติมแถว 1 -->
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายพีรดนย์ คำอุด</h4>
+                    <h4 class="EN">Mr. Peeradone Kham-ud</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานการขายและพัฒนาธุรกิจ</p>
+                    <p class="EN">Executive Vice President, Sales and Business Development Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานทรัพยากรบุคคล</p>
+                    <p class="EN">Executive Vice President, Human Resources Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานโซลูชั่นและเทคโนโลยี</p>
+                    <p class="EN">Executive Vice President, Solutions and Technology Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายกฤษติเดช ศรีเมืองทอง</h4>
+                    <h4 class="EN">Mr. Krittidate Srimuangthong</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานการจัดการสร้างและติดตั้งระบบ</p>
+                    <p class="EN">Executive Vice President, System Construction and Installation Management Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">(ว่าง)</h4>
+                    <h4 class="EN">(empty)</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานการเงินและกลยุทธ์</p>
+                    <p class="EN">Executive Vice President, Finance and Strategy Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">(ว่าง)</h4>
+                    <h4 class="EN">(empty)</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานบัญชีและการเงิน</p>
+                    <p class="EN">Executive Vice President, Accounting and Finance Group</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายอิทธิพล บุญอิทธิเดช</h4>
+                    <h4 class="EN">Mr. Itthiphon Boon-itthidet</h4>
+                    <p class="TH">รองประธานบริหาร กลุ่มงานการจัดการระบบ</p>
+                    <p class="EN">Executive Vice President, System Management Group</p>
+                </div>
+
+                <!-- Youtube -->
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">ประธานบริหารฝ่ายงาน YouTube</p>
+                    <p class="EN">Chairman of YouTube Channel</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">ผู้จัดการรายการ Tell The Most</p>
+                    <p class="EN">Tell The Most Program Manager</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายพีรดนย์ คำอุด</h4>
+                    <h4 class="EN">Mr. Peeradone Kham-ud</h4>
+                    <p class="TH">รองผู้จัดการรายการ Tell The Most</p>
+                    <p class="EN">Deputy Manager of Tell The Most Program</p>
+                </div>
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายธนกฤต เมืองจันทร์</h4>
+                    <h4 class="EN">Mr. Thanakrit Muangchan</h4>
+                    <p class="TH">รองผู้จัดการรายการ Tell The Most</p>
+                    <p class="EN">Deputy Manager of Tell The Most Program</p>
+                </div>
+                
+                <div class="team-member">
+                    <img src="" alt="">
+                    <h4 class="TH">นายณภัทร ปัญโญ</h4>
+                    <h4 class="EN">Mr. Naphat Panyo</h4>
+                    <p class="TH">กรรมการผู้อำนวยการสำนักผลิตรายการ</p>
+                    <p class="EN">Director of the Production Department</p>
+                </div>
+            </team>
+        </teams>
+    </section>
+      
+    <script src="js/script.js"></script>
+</body>
+</html>
